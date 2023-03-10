@@ -1,0 +1,129 @@
+#shopping-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 400px;
+  }
+  
+  .item img {
+    max-width: 100%;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .quantity button {
+    background-color: #ca5151;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .quantity input {
+    margin: 0 10px;
+    text-align: center;
+    width: 50px;
+  }
+  
+  .delete, .like {
+    background-color: #df1709;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  #add-to-cart{
+    background-color: #6ddf09;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px; 
+  }
+
+  .delete:hover,.like:hover{
+    background-color: #6ddf09;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .liked {
+    background-color: #f00;
+  }
+  
+  #total-price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+/* .heart{
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  transform-origin: center;
+  position: relative;
+  background: red;
+  margin: 100px auto;
+}
+.heart::before, .heart::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+}
+.heart::before{
+  left: -8px;
+}
+.heart::after{
+  top: -8px;
+} */
+#like-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+#like-button path {
+  transition: fill 0.2s;
+}
+
+#like-button.liked path {
+  fill: #FF1493;
+}
+/* svg{
+color:red;
+width:50px;
+} */
+
+.btn:hover{
+  cursor: pointer;
+}
